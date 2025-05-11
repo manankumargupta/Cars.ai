@@ -82,30 +82,13 @@ const CommunityPage = () => {
             className="bg-primary-800 border border-primary-700 rounded-lg py-2 pl-10 pr-4 w-full md:w-80 text-white focus:outline-none focus:ring-2 focus:ring-racing-500"
           />
         </div>
-        
-        <div className="flex gap-4 w-full md:w-auto">
-          <button className="btn btn-primary w-full md:w-auto">Start New Discussion</button>
-          <button className="btn btn-outline w-full md:w-auto">Join Discord</button>
-        </div>
+
       </div>
       
       {/* Topics & Posts */}
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Sidebar */}
         <div className="lg:w-1/4">
-          <div className="bg-primary-800 rounded-xl p-6 mb-6">
-            <h3 className="text-xl font-bold mb-4">Popular Topics</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-racing-500 hover:text-racing-400 transition-colors">#ElectricVehicles</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#CarModification</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#SupercarSpotting</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#RacingEvents</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#CarMaintenance</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#VintageCars</a></li>
-              <li><a href="#" className="text-metal-300 hover:text-white transition-colors">#FutureTech</a></li>
-            </ul>
-          </div>
-          
           <div className="bg-primary-800 rounded-xl p-6">
             <h3 className="text-xl font-bold mb-4">Community Rules</h3>
             <ul className="space-y-2 text-sm text-metal-300">
@@ -122,7 +105,6 @@ const CommunityPage = () => {
         
         {/* Main Content */}
         <div className="lg:w-3/4">
-          <h2 className="text-2xl font-bold mb-6">Recent Discussions</h2>
           
           {filteredPosts.length > 0 ? (
             <div className="space-y-6">

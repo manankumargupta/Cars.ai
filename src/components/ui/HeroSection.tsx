@@ -46,14 +46,6 @@ const HeroSection = ({ title, subtitle }: HeroSectionProps) => {
             >
               Explore Cars
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              href="/community"
-              className="btn btn-outline"
-            >
-              Join Community
-            </motion.a>
           </div>
         </motion.div>
 

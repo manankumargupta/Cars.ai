@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!-- index.html -->
+<input id="prompt" placeholder="Enter prompt" />
+<button onclick="sendPrompt()">Send</button>
+<pre id="output"></pre>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js'
+
+  const supabaseUrl = 'https://wqngkuzlpzpyvzjoxvol.supabase.co'
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndxbmdrdXpscHpweXZ6am94dm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY1MTQxODcsImV4cCI6MjA2MjA5MDE4N30.YsF6vJAwV4h4w-CAUzVwOU-Q9CgIKWWVwJjFpRRt4lA'
+  const supabase = createClient(supabaseUrl, supabaseKey)
+
+  const deepseekKey = 'sk-1e2bc43d0b464bcdb0d8a8050286db20'
+  const deepseekEndpoint = 'https://api.deepseek.com/chat/completions'
+
+  async function sendPrompt() {
+    const prompt = document.getElementById('prompt').value
+
+    const response = await fetch(deepseekEndpoint, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${deepseekKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',
+        messages: [
+          { role: 'system', content: 'You are a helpful assistant.' },
+          { role: 'user', content: prompt }
+        ],
+        stream: false
+      })
+    })
+
+    const data = await response.json()
+    const output = data.choices[0].message.content
+    document.getElementById('output').textContent = output
+
+    // Save to Supabase
+    await supabase.from('ai_messages').insert([{ prompt, response: output }])
+  }
+</script>
+
 </body>
 </html>

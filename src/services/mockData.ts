@@ -30,14 +30,14 @@ export const mockCategories: Category[] = [
     id: 'common',
     name: 'Common Cars',
     description: 'Everyday vehicles that offer reliability, comfort, and practicality for daily commuting and family transportation.',
-    image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://images.pexels.com/photos/6794811/pexels-photo-6794811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     carCount: 12,
   },
   {
     id: 'luxury',
     name: 'Luxury Cars',
     description: 'Premium automobiles that deliver exceptional comfort, advanced technology, and superior performance with exquisite craftsmanship.',
-    image: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://images.pexels.com/photos/18369291/pexels-photo-18369291/free-photo-of-a-mercedes-benz-s-class.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     carCount: 8,
   },
   {
@@ -66,10 +66,10 @@ export const mockCars: Car[] = [
     features: ['Apple CarPlay', 'Android Auto', 'Automatic Climate Control', 'Lane Keeping Assist', 'Adaptive Cruise Control'],
     colors: ['Crystal Black', 'Platinum White', 'Sonic Gray', 'Rallye Red'],
     images: {
-      main: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/6794821/pexels-photo-6794821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/2906921/pexels-photo-2906921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/29415490/pexels-photo-29415490/free-photo-of-red-honda-civic-type-r-in-urban-cyprus-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/16475131/pexels-photo-16475131/free-photo-of-top-view-of-a-sports-honda-civic-type-r.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -87,16 +87,16 @@ export const mockCars: Car[] = [
     features: ['Toyota Safety Sense', 'Smart Key System', '8-inch Touchscreen', 'Wireless Charging', 'LED Headlights'],
     colors: ['Celestite Gray', 'Blueprint', 'Ruby Flare Pearl', 'Super White'],
     images: {
-      main: 'https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/16850881/pexels-photo-16850881/free-photo-of-a-red-toyota-gr86-on-an-asphalt-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/19581626/pexels-photo-19581626/free-photo-of-raindrops-on-black-toyota-corolla.jpeg?auto=compress&cs=tinysrgb&w=600',
+        'https://images.pexels.com/photos/17507727/pexels-photo-17507727/free-photo-of-white-toyota-86-with-tsurikawa-ring-parked-near-abandoned-factory-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
   {
     id: 'car3',
-    name: 'Elantra N-Line',
+    name: 'Avante',
     brand: 'Hyundai',
     category: 'common',
     year: 2024,
@@ -108,31 +108,10 @@ export const mockCars: Car[] = [
     features: ['10.25-inch Touchscreen', 'Wireless Apple CarPlay', 'Digital Key', 'Sport Suspension', 'Paddle Shifters'],
     colors: ['Intense Blue', 'Phantom Black', 'Fiery Red', 'Fluid Metal'],
     images: {
-      main: 'https://images.pexels.com/photos/13635505/pexels-photo-13635505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/12353734/pexels-photo-12353734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      ],
-    },
-  },
-  {
-    id: 'car4',
-    name: 'CX-5 Turbo',
-    brand: 'Mazda',
-    category: 'common',
-    year: 2024,
-    price: 33000,
-    horsepower: 250,
-    acceleration: 6.2,
-    topSpeed: 130,
-    description: 'A stylish and powerful compact SUV with premium interior quality and engaging driving dynamics.',
-    features: ['Mazda Connect Infotainment', 'Bose 10-Speaker Audio', 'Heads-up Display', 'Ventilated Seats', 'i-Activ AWD'],
-    colors: ['Soul Red Crystal', 'Snowflake White Pearl', 'Machine Gray', 'Deep Crystal Blue'],
-    images: {
-      main: 'https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      gallery: [
-        'https://images.pexels.com/photos/2036544/pexels-photo-2036544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/17029183/pexels-photo-17029183/free-photo-of-hyndai-avante-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/14696345/pexels-photo-14696345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -152,10 +131,10 @@ export const mockCars: Car[] = [
     features: ['MBUX Infotainment System', 'Burmester 3D Surround Sound', 'Augmented Reality Navigation', 'Executive Rear Seats', 'Air Suspension'],
     colors: ['Obsidian Black', 'Diamond White', 'Emerald Green', 'Rubellite Red'],
     images: {
-      main: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/18369291/pexels-photo-18369291/free-photo-of-a-mercedes-benz-s-class.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/4224305/pexels-photo-4224305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/18370955/pexels-photo-18370955/free-photo-of-black-mercedes-s-class.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/20123634/pexels-photo-20123634/free-photo-of-new-mercedes-benz-in-showroom.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -176,7 +155,7 @@ export const mockCars: Car[] = [
       main: 'https://images.pexels.com/photos/892522/pexels-photo-892522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       gallery: [
         'https://images.pexels.com/photos/951318/pexels-photo-951318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/13828345/pexels-photo-13828345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/10689099/pexels-photo-10689099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -194,10 +173,10 @@ export const mockCars: Car[] = [
     features: ['17-inch Touchscreen', 'Full Self-Driving Capability', 'Tri-Motor AWD', 'Glass Roof', 'Premium Interior'],
     colors: ['Pearl White', 'Solid Black', 'Midnight Silver', 'Deep Blue'],
     images: {
-      main: 'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/28576666/pexels-photo-28576666/free-photo-of-front-view-of-tesla-model-s-in-urban-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/26957121/pexels-photo-26957121/free-photo-of-tesla.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/28576665/pexels-photo-28576665/free-photo-of-sleek-tesla-model-s-electric-car-parked-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -217,10 +196,10 @@ export const mockCars: Car[] = [
     features: ['8.0L Quad-Turbo W16 Engine', 'Carbon Fiber Monocoque', 'Active Aerodynamics', 'Lightweight Magnesium Wheels', 'Telemetry System'],
     colors: ['Atlantic Blue', 'Black Carbon', 'French Racing Blue', 'Silver'],
     images: {
-      main: 'https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/12964186/pexels-photo-12964186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/3608542/pexels-photo-3608542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/4006367/pexels-photo-4006367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/454604/pexels-photo-454604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/29881414/pexels-photo-29881414/free-photo-of-elegant-blue-bugatti-front-detail-display.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },
@@ -238,10 +217,10 @@ export const mockCars: Car[] = [
     features: ['Hybrid Powertrain', 'All-Wheel Drive', 'eManettino Driving Modes', 'Retractable Hardtop', 'Carbon Fiber Body'],
     colors: ['Rosso Corsa', 'Giallo Modena', 'Nero Daytona', 'Argento Nürburgring'],
     images: {
-      main: 'https://images.pexels.com/photos/3608542/pexels-photo-3608542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      main: 'https://images.pexels.com/photos/12801144/pexels-photo-12801144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gallery: [
-        'https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/14317474/pexels-photo-14317474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/12576612/pexels-photo-12576612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       ],
     },
   },

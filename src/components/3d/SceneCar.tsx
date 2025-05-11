@@ -75,9 +75,9 @@ const Fallback = () => {
 
 export const SceneCar = ({ position = [0, 0, 4], fov = 45 }: SceneProps) => {
   const [autoRotate, setAutoRotate] = useState(true);
-  
+
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -88,24 +88,16 @@ export const SceneCar = ({ position = [0, 0, 4], fov = 45 }: SceneProps) => {
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
         <spotLight position={[-10, 10, -10]} angle={0.15} penumbra={1} intensity={0.5} castShadow />
-        
+
         <Suspense fallback={<Fallback />}>
           <Car />
           <Environment preset="city" />
           <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.5} width={10} height={10} blur={1} far={2} />
         </Suspense>
-        
+
         <OrbitControls autoRotate={autoRotate} enableZoom={true} enablePan={false} />
       </Canvas>
-      
-      <div className="absolute bottom-4 right-4 z-10">
-        <button 
-          onClick={() => setAutoRotate(!autoRotate)}
-          className="bg-primary-800/80 backdrop-blur-sm hover:bg-primary-700 text-white p-2 rounded-full"
-        >
-          {autoRotate ? 'Stop Rotation' : 'Auto Rotate'}
-        </button>
-      </div>
+
     </motion.div>
   );
 };

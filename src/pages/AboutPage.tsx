@@ -187,7 +187,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-xl font-bold">Marcus Lee</h3>
+            <h3 className="text-xl font-bold">Parneet Thakur</h3>
             <p className="text-racing-500 mb-2">Community Manager</p>
             <p className="text-sm text-metal-400">Award-winning UI/UX designer with a focus on creating immersive digital experiences.</p>
           </motion.div>
@@ -212,20 +212,6 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
-            viewport={{ once: true }}
-            className="bg-primary-800 rounded-xl p-6 border border-primary-700"
-          >
-            <Trophy className="h-10 w-10 text-accent-500 mb-4" />
-            <h3 className="text-xl font-bold mb-2">Best Tech Startup 2024</h3>
-            <p className="text-metal-300">
-              Recognized as one of the most innovative tech startups in the automotive space.
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.1 }}
             viewport={{ once: true }}
             className="bg-primary-800 rounded-xl p-6 border border-primary-700"
@@ -234,20 +220,6 @@ const AboutPage = () => {
             <h3 className="text-xl font-bold mb-2">Excellence in 3D Visualization</h3>
             <p className="text-metal-300">
               Awarded for our groundbreaking approach to web-based 3D car visualization.
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-primary-800 rounded-xl p-6 border border-primary-700"
-          >
-            <Zap className="h-10 w-10 text-racing-300 mb-4" />
-            <h3 className="text-xl font-bold mb-2">1 Million+ Active Users</h3>
-            <p className="text-metal-300">
-              Reached the milestone of one million active monthly users on our platform.
             </p>
           </motion.div>
         </div>

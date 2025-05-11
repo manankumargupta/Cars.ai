@@ -17,7 +17,7 @@ Deno.serve(async (req) => {
 
     // Initialize AI client (example using OpenAI - replace with your preferred AI service)
     const configuration = new Configuration({
-      apiKey: Deno.env.get('AI_API_KEY'),
+      apiKey: Deno.env.get('sk-1e2bc43d0b464bcdb0d8a8050286db20'),
     });
     const ai = new OpenAIApi(configuration);
 

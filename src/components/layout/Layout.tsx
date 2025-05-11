@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { AiChatbot } from '../ai/AiChatbot';
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <main className="flex-grow">
         {children}
       </main>
+      <AiChatbot />
       <Footer />
     </div>
   );
